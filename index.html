@@ -46,7 +46,8 @@
     noButton.style.position = "absolute";
 
     document.getElementsByClassName("image")[0].src = "images/gun.gif";
-
+    document.getElementsByClassName("image")[1].style.display = '';
+    
     const randomX = Math.max(0, Math.floor(Math.random() * maxWidth));
     const randomY = Math.max(0, Math.floor(Math.random() * maxHeight));
 
@@ -68,7 +69,6 @@
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "images/kiss1.jpg";
-    document.getElementsByClassName("image")[1].style.display = '';
     document.getElementsByClassName("image")[2].src = "images/kiss.gif";
     document.getElementsByClassName("image")[2].style.display = '';
     document.getElementById("yesButton").remove();
