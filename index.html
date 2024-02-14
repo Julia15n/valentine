@@ -13,6 +13,8 @@
     <div class="container">
         <div class="Mainprompt">
             <img class="image" src="images/cute.gif"></img>
+            <img class="image" src="images/2.jpg"
+            style="display: none"></img>
             <div class="text">
               <h1 class="hh" id="name">Привіт, Юлька!</h1>
               <p class="pp" id="question">Не хочеш бути моєю Валентинкою? </p>
@@ -66,8 +68,9 @@
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "images/kiss1.jpg";
-    document.getElementsByClassName("image")[1].src = "images/kiss.gif";
-    document.getElementsByClassName("image")[1].style.display = 'block';
+    document.getElementsByClassName("image")[1].style.display = '';
+    document.getElementsByClassName("image")[2].src = "images/kiss.gif";
+    document.getElementsByClassName("image")[2].style.display = '';
     document.getElementById("yesButton").remove();
   }
 }
